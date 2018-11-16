@@ -50,7 +50,7 @@ params = pika.URLParameters(url)
 
 while True:
     try:
-        print("Connecting...")
+        print("Connecting....")
         ## Shuffle the hosts list before reconnecting.
         ## This can help balance connections.
         #random.shuffle(all_endpoints)
@@ -65,6 +65,7 @@ while True:
         channel.basic_consume(callback,
                               queue='docker',
                               no_ack=True)
+        time.sleep(3)
         try:
             channel.start_consuming()
         except KeyboardInterrupt:
@@ -88,5 +89,3 @@ while True:
     except pika.exceptions.AMQPConnectionError:
         print("Connection was closed, retrying...")
         continue
-
-    time.sleep(3)

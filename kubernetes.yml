@@ -1,0 +1,13 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+  name: nfvo
+
+spec:
+  containers:
+  - name: nfvo
+    image: eu.gcr.io/[project_name]/django-nfvo
+    ports:
+    - containerPort: 8000

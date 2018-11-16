@@ -26,7 +26,8 @@ SECRET_KEY = 'tqf7tp-oo6c7vuo2678(b7=w49&iot1p%#m274e_b+qzm=h45j'
 DEBUG = True
 
 # Todo: hardcoded IP seems to be not a good idea
-ALLOWED_HOSTS = ['172.20.0.3']
+#ALLOWED_HOSTS = ['172.20.0.3']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
