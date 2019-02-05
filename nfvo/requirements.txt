@@ -1,5 +1,5 @@
-Django==2.1.2
-djangorestframework==3.9.0
-pytz==2018.7
-django-rest-swagger==2.2.0
-pika==0.12.0
+Django
+djangorestframework
+pytz
+django-rest-swagger
+pika
